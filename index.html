@@ -15,11 +15,13 @@
 </head>
 <body>
     <header class="container flex items-center justify-between text-lg pt-4">
-        <img src="Assets/Images/header/logo.png" alt="">
+        <a href="">
+            <img src="Assets/Images/header/logo.png" alt="" class="w-[50px] h-[50px]">
+        </a>
         <div class="flex items-center gap-[50px] text-[#1E1E1E]">
-            <a href="">Функции</a>
-            <a href="">Для кого подойдет</a>
-            <a href="">Тарифы</a>
+            <a class="main" href="#functions">Функции</a>
+            <a class="main" href="#for">Для кого подойдет</a>
+            <a class="main" href="#tariff">Тарифы</a>
         </div>
         <div class="flex items-center gap-[30px]">
             <button class="py-4 px-12 rounded-[10px] bg-[#E8E4FF] text-[#4D34EA] transition-all duration-500 hover:delay-100 hover:bg-[#c5c2d9]">Войти</button>
@@ -67,7 +69,7 @@
         </div>
     </div>
 
-    <div class="w-full py-[100px] border-b border-[#E8E4FF]">
+    <div class="w-full py-[100px] border-b border-[#E8E4FF]" id="functions">
         <div class="container">
             <div class="flex items-center justify-between">
                 <p class="text-[60px] font-semibold text-[#151515] max-w-[565px] leading-[1.1]">Сервис <span class="text-[#4D34EA] italic">поможет</span> сделать документы</p>
@@ -141,7 +143,7 @@
         </div>
     </div>
 
-    <div class="w-full py-[100px] border-b border-[#E8E4FF]">
+    <div class="w-full py-[100px] border-b border-[#E8E4FF]" id="for">
         <div class="container flex gap-11">
            <div class="flex flex-col justify-between h-full shrink-0">
                 <div class="flex flex-col gap-[30px]">
@@ -176,7 +178,7 @@
         </div>
     </div>
 
-    <div class="w-full py-[100px] border-b border-[#E8E4FF]">
+    <div class="w-full py-[100px] border-b border-[#E8E4FF]" id="tariff">
         <div class="container">
             <div class="flex items-center justify-between">
                 <p class="text-[60px] font-semibold text-[#151515] leading-[1.1]">Тарифы и <span class="text-[#4D34EA] italic">возможности</span></p>
@@ -253,8 +255,69 @@
         </div>
     </div>
 
-    <footer>
+    <div class="w-full pt-20 pl-[calc((100%-1290px)/2)] flex gap-[85px] items-center">
+        <div class="flex flex-col">
+            <p class="text-[60px] font-semibold text-[#151515] leading-[1.1]">Остались <span class="text-[#4D34EA] italic">вопросы?</span></p>
+            <p class="max-w-[548px] text-[#1E1E1E] text-[25px] mt-[30px]">Оставьте свою электронную почту и мы вышлем вам подробную информацию</p>
+            <form action="" class="mt-[50px] relative max-w-[520px]">
+                <input type="text" class="w-full rounded-[10px] bg-[#F5F3FF] py-[18px] pl-[30px] pr-[220px] placholder-[#C7C0EE]" placeholder="Электронная почта">
+                <button class="absolute text-white bg-[#4D34EA] rounded-[10px] py-4 text-lg px-[55px] top-0 right-0">Отправить</button>
+            </form>
+            <div class="flex flex-col gap-[30px] mt-10">
+                <div class="flex gap-4 items-center">
+                    <img src="Assets/Images/questions/1.png" alt="">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-[15px] text-[#454545]">Бесплатные звонок по России</p>
+                        <a href="tel:8 800 775 34 62" class="text-[#1E1E1E] text-xl font-semibold">8 800 775 34 62</a>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <img src="Assets/Images/questions/2.png" alt="">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-[15px] text-[#454545]">Электронная почта</p>
+                        <a href="mailto:support@smetter.ru" class="text-[#1E1E1E] text-xl font-semibold">support@smetter.ru</a>
+                    </div>
+                </div>
+                <div class="flex gap-4 items-center">
+                    <img src="Assets/Images/questions/3.png" alt="">
+                    <div class="flex flex-col gap-1">
+                        <p class="text-[15px] text-[#454545]">Наш Telegram канал</p>
+                        <a href="https://t.me/smetter_support" target="_blank" class="text-[#1E1E1E] text-xl font-semibold">@smetter_support</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="Assets/Images/questions/laptop.png" alt="">
+    </div>
 
+    <footer class="w-full bg-[#151515] pt-[50px] pb-[57px]">
+        <div class="container grid grid-cols-3 gap-[250px]">
+            <div class="flex flex-col gap-5">
+                <a href="">
+                    <img src="Assets/Images/header/logo.png" alt="" class="w-[50px] h-[50px]">
+                </a>
+                <div class="flex gap-3 items-center">
+                    <img src="Assets/Images/footer/pulse.png" alt="" class="animate-pulse">
+                    <p class="text-white">Мы на связи</p>
+                </div>
+                <div class="flex items-center gap-2.5">
+                    <a href="" target="_blank"><img src="Assets/Images/footer/telegramm.png" alt=""></a>
+                    <a href="" target="_blank"><img src="Assets/Images/footer/ok.png" alt=""></a>
+                    <a href="" target="_blank"><img src="Assets/Images/footer/vk.png" alt=""></a>
+                    <a href="" target="_blank"><img src="Assets/Images/footer/whatsapp.png" alt=""></a>
+                    <a href="" target="_blank"><img src="Assets/Images/footer/youtube.png" alt=""></a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 text-white text-lg">
+                <a class="main" href="#functions">Функции</a>
+                <a class="main" href="#for">Для кого подойдет</a>
+                <a class="main" href="#tariff">Тарифы</a>
+            </div>
+            <div class="flex flex-col gap-5 text-white text-lg">
+                <a href="tel:8 800 775 34 62">8 800 775 34 62</a>
+                <a href="mailto:support@smetter.ru" class="underline underline-offset-2">support@smetter.ru</a>
+            </div>
+        </div>
     </footer>
     
 	<script src="https://code.jquery.com/jquery-3.6.3.min.js" 

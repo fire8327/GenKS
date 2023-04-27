@@ -1,4 +1,5 @@
 /*jshint esnext: true */
+/* toggle checkbox */
 $("#toggler1, #toggler2").click(() => {
   $("#toggle").toggleClass("-translate-x-[calc(100%-14px)]");
   $("#toggle").toggleClass("w-1/2");
@@ -20,4 +21,13 @@ $("#toggler2").click(()=>{
   });
   $(".sum2").find(".price").text("7 916 ₽");
   $(".sum2").find(".month").find(".year").toggleClass("hidden");
+});
+
+/* main links */
+$("a.main").on("click", function(e){
+  e.preventDefault();
+  var anchor = $(this).attr('href');
+  $('html, body').stop().animate({
+      scrollTop: $(anchor).offset().top - 0
+  }, 800);
 });
